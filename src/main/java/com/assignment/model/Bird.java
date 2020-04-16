@@ -1,6 +1,5 @@
 package com.assignment.model;
 
-import com.assignment.SingBehaviour;
 import com.assignment.behaviour.Fly;
 import com.assignment.behaviour.Sing;
 import com.assignment.behaviour.Walk;

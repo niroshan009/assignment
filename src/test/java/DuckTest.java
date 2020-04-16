@@ -1,6 +1,4 @@
-import com.assignment.SingBehaviour;
 import com.assignment.model.Animal;
-import com.assignment.model.Bird;
 import com.assignment.model.Duck;
 import org.junit.Assert;
 import org.junit.Test;
