@@ -18,8 +18,9 @@ public class DuckTest {
         if (duck instanceof Duck) {
             ((Duck) duck).walk();
             Assert.assertEquals("I am walking", outContent.toString().replace("\n", ""));
+        } else {
+            Assert.fail();
         }
-
     }
 
     @Test
@@ -31,8 +32,9 @@ public class DuckTest {
 
             ((Duck) duck).sing();
             Assert.assertEquals("Quack,quack", outContent.toString().replace("\n", ""));
+        } else {
+            Assert.fail();
         }
-
     }
 
     @Test
@@ -44,7 +46,22 @@ public class DuckTest {
 
             ((Duck) duck).fly();
             Assert.assertEquals("I am flying", outContent.toString().replace("\n", ""));
+        } else {
+            Assert.fail();
         }
+    }
 
+    @Test
+    public void testBirdSwimBehaviour() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        Animal duck = new Duck();
+        if (duck instanceof Duck) {
+
+            ((Duck) duck).swim();
+            Assert.assertEquals("I am swimming", outContent.toString().replace("\n", ""));
+        } else {
+            Assert.fail();
+        }
     }
 }
