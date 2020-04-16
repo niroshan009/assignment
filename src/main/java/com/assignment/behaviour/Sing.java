@@ -1,7 +1,7 @@
 package com.assignment.behaviour;
-
-import com.assignment.SingBehaviour;
-
+src/main/java/com/assignment/behaviour/Sing.java
 public interface Sing {
-    public void sing(SingBehaviour singBehaviour);
+    default void sing(){
+        System.out.println("I am singing");
+    };
 }

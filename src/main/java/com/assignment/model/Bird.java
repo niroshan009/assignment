@@ -7,8 +7,4 @@ import com.assignment.behaviour.Walk;
 
 public class Bird implements Animal, Walk, Fly , Sing {
 
-    @Override
-    public void sing(SingBehaviour singBehaviour) {
-        singBehaviour.sing();
-    }
 }
