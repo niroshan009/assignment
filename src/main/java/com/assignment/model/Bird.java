@@ -1,7 +1,14 @@
 package com.assignment.model;
 
-public class Bird extends Animal {
-    public void fly(){
-        System.out.println("I am flying");
+import com.assignment.SingBehaviour;
+import com.assignment.behaviour.Fly;
+import com.assignment.behaviour.Sing;
+import com.assignment.behaviour.Walk;
+
+public class Bird implements Animal, Walk, Fly , Sing {
+
+    @Override
+    public void sing(SingBehaviour singBehaviour) {
+        singBehaviour.sing();
     }
 }
